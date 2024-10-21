@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grounded</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="gorunded.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="index.html">Inicio</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="pagina1.html">Grounded</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pagina2.html">Little Nightmares</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pagina3.html">Dead by Daylight</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 class="text-center">Grounded - Un mundo más grande de lo que parece</h1>
+        <p class="text-center">Explora, construye y sobrevive en este juego de supervivencia en primera persona.</p>
+
+        <div class="row align-items-center mb-5 section-background">
+            <div class="col-md-6">
+                <h3>Sobrevive al jardín</h3>
+                <p>Este juego nos invita a convertirnos en uno de los cuatro niños que, de forma
+                    misteriosa, se despiertan en un jardín en el que la hierba son grandes como árboles y
+                    los ácaros del polvo tan peligrosos como ratas traicioneras. Nuestro objetivo, como ya habrás
+                    deducido, pasa por descubrir qué se esconde detrás de esta surrealista situación y volver a nuestra
+                    estatura normal. El jardín está lleno de peligros. Tendrás que explorar y encontrar recursos mientras
+                    evitas las amenazas constantes.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="gr1.jpg" class="img-fluid" alt="Imagen 1 de Grounded">
+            </div>
+        </div>
+
+        <div class="row align-items-center mb-5 section-background">
+            <div class="col-md-6 order-md-2">
+                <h3>Sobrevive</h3>
+                <p>No es que el jardín sea gigante, claro, es que nosotros nos hemos vuelto diminutos, así que para
+                    sobrevivir en un ambiente completamente hostil en el que hasta las mariquitas pueden resultar
+                    letales, deberemos hacer uso de la exploración para reconocer el terreno y sus peligros, y nuestro
+                    ingenio al construir herramientas que irán desde una cama en la que descansar hasta una espada hecha
+                    de pincho de mosquito tigre capaz de robar vida a tus enemigos.</p>
+            </div>
+            <div class="col-md-6 order-md-1">
+                <img src="g2.jpg" class="img-fluid" alt="Imagen 2 de Grounded">
+            </div>
+        </div>
+
+        <div class="row align-items-center mb-5 section-background">
+            <div class="col-md-6">
+                <h3>¿Por Qué Recomendaría Grounded?</h3>
+                <p>Grounded es una opción que definitivamente debes probar. La combinación de un mundo fascinante, enemigos desafiantes, y la
+                    posibilidad de jugar en equipo o en solitario lo convierte en una experiencia refrescante y
+                    emocionante. Además, la constante evolución del juego a través de actualizaciones lo mantiene
+                    relevante y lleno de sorpresas. Recomendaría Grounded porque es un juego que te atrapa por su originalidad, te reta por su
+                    jugabilidad, y te mantiene enganchado por su atmósfera única. Ya sea que disfrutes construyendo una
+                    fortaleza junto a tus amigos o enfrentándote a arañas gigantes en solitario, Grounded tiene algo
+                    especial que ofrecer a todo tipo de jugadores.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="g3.webp" class="img-fluid" alt="Imagen 3 de Grounded">
+            </div>
+        </div>
+
+        <div class="text-center">
+            <button type="button" class="btn btn-primary mt-4" onclick="window.open('https://www.youtube.com/watch?v=E5u76lHxniI', '_blank')">Ver Tráiler</button>
+        </div>
+        <div class="alert alert-info mt-4" id="miAlerta" role="alert" style="display: none;">
+            Si tienes aracnofobia la pasarás mal en el juego, pero afortunadamente el juego está preparado para eso,
+            solo activa el modo aracnofobia en el juego y puede que no la pases tan mal.
+        </div>
+        <div class="text-center">
+            <button type="button" class="btn btn-warning" onclick="mostrarAlerta()">Consejo</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>La arañas dan miedo en este juego</p>
+    </div>
+
+    <script>
+        function mostrarAlerta() {
+            var alerta = document.getElementById('miAlerta');
+            alerta.style.display = 'block';
+            setTimeout(function() {
+                alerta.style.display = 'none';
+            }, 5000);
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

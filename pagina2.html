@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Nightmares</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="ln.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="index.html">Inicio</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="pagina1.html">Grounded</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="pagina2.html">Little Nightmares</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pagina3.html">Dead by Daylight</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 class="text-center">Little Nightmares - Un Mundo Oscuro y Misterioso</h1>
+        <p class="text-center">Enfréntate a tus miedos más profundos en este juego de aventuras y terror atmosférico.</p>
+        
+        <div class="row align-items-center mb-5 section-background">
+            <div class="col-md-6">
+                <h3>Una Aventura Sombría</h3>
+                <p>En *Little Nightmares*, te pondrás en la piel de Six, una niña atrapada en un misterioso barco lleno de criaturas inquietantes. Tendrás que escapar y descubrir los oscuros secretos que acechan en este mundo retorcido.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="l1.jpg" class="img-fluid" alt="Imagen 1 de Little Nightmares">
+            </div>
+        </div>
+        
+        <div class="row align-items-center mb-5 section-background">
+            <div class="col-md-6 order-md-2">
+                <h3>Resuelve Puzzles</h3>
+                <p>A lo largo de la aventura, te enfrentarás a una serie de desafiantes rompecabezas que deberás resolver para avanzar. Cada reto pondrá a prueba tu ingenio mientras intentas evadir a las criaturas aterradoras que acechan en las sombras.</p>
+            </div>
+            <div class="col-md-6 order-md-1">
+                <img src="l2.jpg" class="img-fluid" alt="Imagen 2 de Little Nightmares">
+            </div>
+        </div>
+
+        <div class="row align-items-center mb-5 section-background">
+            <div class="col-md-6">
+                <h3>Un Mundo de Pesadilla</h3>
+                <p>El diseño visual y la atmósfera de *Little Nightmares* te sumergirán en un mundo de pesadillas. Cada rincón está lleno de detalles espeluznantes que te mantendrán al borde de tu asiento.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="l3.jpg" class="img-fluid" alt="Imagen 3 de Little Nightmares">
+            </div>
+        </div>
+
+        <div class="text-center">
+            <button type="button" class="btn btn-primary mt-4" onclick="window.open('https://www.youtube.com/watch?v=aOadxZBsPiA')">Ver Tráiler</button>
+        </div>
+
+        <div class="alert alert-info mt-4" id="miAlerta" role="alert" style="display: none;">
+            Tu mejor aliado es el silencio, no hacer ruido y ser sigiloso te ayudará mucho.
+        </div>
+        <div class="text-center">
+            <button type="button" class="btn btn-warning" onclick="mostrarAlerta()">Consejo</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>No le tengas miedo al juego</p>
+    </div>
+
+    <script>
+        function mostrarAlerta() {
+            var alerta = document.getElementById('miAlerta');
+            alerta.style.display = 'block';
+            setTimeout(function() {
+                alerta.style.display = 'none';
+            }, 5000);
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

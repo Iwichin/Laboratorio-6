@@ -1,23 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab 6</title>
-
+    <title>Recomendaciones de Juegos</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="navbar">
-        <a href="#">pagina 1</a>
-        <a href="#">pagina 2</a>
-        <a href="#">pagina 3</a>
-    </div>
-    <div class="content">
-        <img src="wichin_3.png" alt="Imagen">
-        <h1>Nada pora ahora</h1>
-    </div>
-</body>
-</html>
 
-  
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Inicio</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="pagina1.html">Grounded</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pagina2.html">Little Nightmares</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pagina3.html">Deab by Daylight</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-4 position-relative">
+        <h1 class="text-center">Juegos que te recominedo jugar</h1>
+        
+        <div class="row justify-content-center">
+            <div class="col-md-3">
+                <div class="card mb-4 shadow-sm">
+                    <img src="grounded.jpg" class="card-img-top fixed-size-img" alt="Juego 1">
+                    <div class="card-body" style="background-color: #f0f0f0;">
+                        <h5 class="card-title"><a href="pagina1.html">Grounded</a></h5>
+                        <p class="card-text">Es un juego de aventuras y supervivencia en el que los jugadores
+                            son encogidos en un jardín trasero dentro de un entorno suburbano. Los jugadores tendrán que
+                            explorar, construir y sobrevivir mientras se enfrentan a los peligros y riesgos que conlleva
+                            tener el tamaño de un insecto</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4 shadow-sm">
+                    <img src="little n.JPG" class="card-img-top fixed-size-img" alt="Juego 2">
+                    <div class="card-body" style="background-color: #e0f7fa;">
+                        <h5 class="card-title"><a href="pagina2.html">Little Nightmares</a></h5>
+                        <p class="card-text">Ambientada en un mundo misterioso,sigue el viaje de Six,
+                            una niña hambrienta que debe escapar del buche, un recipiente de hierro habitado por seres
+                            monstruosos y retorcidos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4 shadow-sm">
+                    <img src="dbd.JPG" class="card-img-top fixed-size-img" alt="Juego 3">
+                    <div class="card-body" style="background-color: #fff3e0;">
+                        <h5 class="card-title"><a href="pagina3.html">Deab by Daylight</a></h5>
+                        <p class="card-text">Este es un juego de horror de multijugador (4 contra 1) en el que un jugador
+                            representa el rol del asesino despiadado y los 4 restantes juegan como supervivientes que
+                            intentan escapar de él para evitar ser capturados, torturados y asesinados</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    
+        <img src="wr.png" class="position-absolute" alt="Imagen lateral" style="right: -520px; top: 100px; width: 800px;">
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

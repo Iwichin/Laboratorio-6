@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dead by Daylight</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dbd.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="index.html">Inicio</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="pagina1.html">Grounded</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pagina2.html">Little Nightmares</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="pagina3.html">Dead by Daylight</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <h1 class="text-center">Dead by Daylight - Sobrevive o Muere</h1>
+        <p class="text-center">Un juego asimétrico de terror multijugador donde un grupo de sobrevivientes intenta escapar de un asesino.</p>
+
+  
+        <div class="row align-items-center mb-5 section-background">
+            <div class="col-md-6">
+                <h3>Sobrevivientes y Asesinos</h3>
+                <p>En Dead by Daylight, los jugadores pueden elegir ser sobrevivientes, que deben trabajar juntos para escapar del mapa, o el asesino, cuya misión es atrapar a los sobrevivientes antes de que logren escapar. Cada personaje tiene habilidades únicas que pueden cambiar el rumbo del juego.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="d1.jpg" class="img-fluid" alt="Imagen 1 de Dead by Daylight">
+            </div>
+        </div>
+
+        <div class="row align-items-center mb-5 section-background">
+            <div class="col-md-6 order-md-2">
+                <h3>Trabajo en Equipo</h3>
+                <p>La comunicación y la estrategia son claves para sobrevivir. Los sobrevivientes deben reparar generadores para abrir las puertas de salida, mientras que el asesino se mueve sigilosamente para atrapar a su presa. La tensión aumenta a medida que el tiempo avanza y las decisiones se vuelven críticas.</p>
+            </div>
+            <div class="col-md-6 order-md-1">
+                <img src="d2.jpg" class="img-fluid" alt="Imagen 2 de Dead by Daylight">
+            </div>
+        </div>
+
+      
+        <div class="row align-items-center mb-5 section-background">
+            <div class="col-md-6">
+                <h3>¿Por Qué Recomendaría Dead by Daylight?</h3>
+                <p>Dead by Daylight ofrece una experiencia única y emocionante, perfecta para aquellos que buscan emociones fuertes. La combinación de estrategia, trabajo en equipo y el constante riesgo de ser atrapado por el asesino crea una atmósfera de suspense. Además, la variedad de personajes y mapas mantiene la jugabilidad fresca y emocionante.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="d3.webp" class="img-fluid" alt="Imagen 3 de Dead by Daylight">
+            </div>
+        </div>
+
+        
+        <div class="text-center">
+            <button type="button" class="btn btn-primary mt-4" onclick="window.open('https://www.youtube.com/watch?v=JGhIXLO3ul8')">Tráiler</button>
+            <div class="alert alert-info mt-4" id="miAlerta" role="alert" style="display: none;">
+                Desbloque la mayor cantidad de personajes; todos tienen habilidades únicas que puedes combinar para ayudarte a escapar del killer.
+            </div>
+            <button type="button" class="btn btn-warning" onclick="mostrarAlerta()">Consejo</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Este juego es mejor con amigos </p>
+    </div>
+
+    <script>
+        function mostrarAlerta() {
+            var alerta = document.getElementById('miAlerta');
+            alerta.style.display = 'block';
+            setTimeout(function () {
+                alerta.style.display = 'none';
+            }, 6000);
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
